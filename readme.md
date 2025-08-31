@@ -43,12 +43,17 @@ This project simulates a simplified **Hadoop Distributed File System (HDFS)** us
 ## 📂 Project Structure
 
 hdfs-simulation/
-│
+
 ├── namenode.py # Handles metadata and block assignments
+
 ├── slavenode.py # Handles block storage and retrieval
+
 ├── client.py # Handles file operations (upload & download)
+
 ├── cli.py # Interactive HDFS CLI
+
 ├── metadata.json # Stores file-to-block mapping (auto-generated)
+
 └── README.md # Documentation
 
 
