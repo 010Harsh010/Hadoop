@@ -1,0 +1,19 @@
+
+Project: Read Write In HDFS 
+Introduction
+In this project, you'll develop a functional, small-scale simulation of the Hadoop Distributed File System (HDFS). Your implementation will model how a NameNode orchestrates the storage and retrieval of a 100 MB file by splitting it into 32 MB blocks and distributing them across 4  SlaveNodes.
+Your Mission
+Your goal is to implement two key operations: add and read.
+The add Operation:
+A client program must be able to take a 100 MB file as input.
+This file should be programmatically split into smaller blocks of 32 MB. 
+The client will first contact the NameNode to get a list of SlaveNodes designated for storing each block.
+The client then writes the blocks directly to the specified SlaveNodes.
+Finally, the NameNode updates its internal metadata to map the filename to its corresponding block locations.
+The read Operation:
+A client program requests to read the 100 MB file by name from the NameNode.
+The NameNode responds with an ordered list of all the blocks and the SlaveNode addresses where each block can be found.
+The client then connects to the SlaveNodes, reads the blocks in the correct order, and pieces them together to form the original file.
+Deliverables
+Well-commented source code for your NameNode, SlaveNode, and client logic.
+A README.md file explaining your design choices and providing clear instructions on how to compile and run your simulation.
